@@ -1,0 +1,78 @@
+:root {
+    --main-color: #818eb1;
+    --hover-color: #2764BA;
+    --body-color: #E0E0E0;
+    --box-color: white;
+    --border-color: #554e8e;
+  }
+
+  .headerclass{
+    position: fixed;
+	background: #fff;
+    justify-content: space-around;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    text-transform: uppercase;
+	border-bottom: var(--border-color) solid 5px;
+}
+.logo img{
+    width: 45px;
+}
+.headerclass .navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.headerclass .navbar ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.headerclass .navbar ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.checkbtn{
+    font-size: 35px;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:850px){
+    .checkbtn{
+        display: block;
+        color: var(--main-color);
+    }
+    .headerclass ul{
+        position: fixed;
+        width: 100%;
+        height: 48vh;
+        background-color: var(--main-color);
+        top: 35px;
+        padding: 20px 20px 0px 20px;
+        left: -120%;
+        transition: all 1.5s;
+        text-align: center;
+        display: grid;
+    }
+    .headerclass ul li{
+        display: block;
+    }
+    .headerclass ul li a{
+        font-size: 20px;
+        transition: all .5s;
+    }
+    .headerclass a:hover,a.active{
+        background: none;
+        color: yellow;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}

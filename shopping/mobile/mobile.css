@@ -1,0 +1,74 @@
+body{
+    background-color: white;
+    width: 100%;
+}
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 55px;
+    text-transform: capitalize;
+    margin-top: -8px;
+}
+.header h1{
+    color: aqua;
+    margin-left: 20px; 
+}
+.header h1 span{
+    color: blue; 
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar li{
+    list-style-type: none;
+}
+.navbar a{
+    margin: 30px;
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 25px;
+}
+.mobile-section a{text-decoration: none;}
+.mobile-section{
+    text-transform: capitalize;
+    margin-left: 23%;
+}
+.mobile-section .s22mobileimg{
+    width: 18%;
+}
+.mobile-section .mobile{
+    display: flex;
+    padding-top: 65px;
+   
+    border-bottom: 3px solid cornflowerblue;
+}
+.detail{
+    padding-left: 30px;
+}
+.price{
+    color: cornflowerblue;
+    font-size: 25px;
+}
+.price span{
+    font-size: 15px;
+    text-decoration: line-through;
+    color: black;
+}
+.stock{
+    color: brown;
+}
+.color-dot{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+.color-dot i{
+    padding: 4px;
+}
+.color-dot1{color: #242424;}
+.color-dot2{color: blue;}
+.color-dot3{color: green;}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="14pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header class="headerclass">
+        <div class="logo">
+            <img src="cart-5590713-4652405.webp">
+        </div>
+        <div class="navbar">
+            
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="seeroom.html" id="java">rooms</a></li>
+                <li><a href="#">event</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="container">
+    <div class="containerimg">            
+        <img id="imagebox" src="14promaxpurplr.jpg" class="container-img">
+        <div class="product-small-img">
+            <img src="14proimg1.jpg" class="product-small-images" onclick="myFunction(this)">
+            <img src="14proimg2.jpg" class="product-small-images" onclick="myFunction(this)">
+            <img src="14proimg3.jpg" class="product-small-images" onclick="myFunction(this)">
+            <img src="14proimg4.jpg" class="product-small-images" onclick="myFunction(this)">
+        </div>
+        <div class="product-color-img">
+            <img src="14promaxpurplr.jpg" class="product-color-images" onclick="myFunction(this)">
+            <img src="14promaxwhite.jpg" class="product-color-images" onclick="myFunction(this)">
+            <img src="14promaxblck.jpg" class="product-color-images" onclick="myFunction(this)">
+            <img src="14promaxgold.jpg" class="product-color-images" onclick="myFunction(this)">
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction(smallimg)
+        {
+            var fullimg = document.getElementById("imagebox");
+            fullimg.src =smallimg.src;
+        }
+    </script>
+    
+   
+    <script src="https://kit.fontawesome.com/ccefff6d75.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

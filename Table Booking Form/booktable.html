@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var currentDateTime = new Date();
+        var year = currentDateTime.getFullYear();
+        var month = (currentDateTime.getMonth() + 1);
+        var date = (currentDateTime.getDate() + 1);
+
+        if(date < 10)
+         {
+         date = '0' + date;
+        }
+        if(month < 10) 
+        {
+         month = '0' + month;
+        }
+
+      var dateTomorrow = year + "-" + month + "-" + date;
+      var checkinElem = document.querySelector("#checkin-date");
+      var checkoutElem = document.querySelector("#checkout-date");
+
+      checkinElem.setAttribute("min", dateTomorrow);
+
+      checkinElem.onchange = function () {
+          checkoutElem.setAttribute("min", this.value);
+      }
+</script>
+<form action="reservation.php" method="post" class="form">
+  <div class="group1">
+    <div class="elem-group">
+      <label for="name"><h1 class="title">Your Name</h1></label>
+      <input type="text" id="name" name="visitor_name" placeholder="Enter your name" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email"><h1 class="title">Your E-mail</h1></label>
+      <input type="email" id="email" name="visitor_email" placeholder="abc@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone"><h1 class="title">Your Phone</h1></label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="9999999999" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+ 
+    
+    <hr>
+    <div class="elem-group inlined">
+      <label for="adult"><h1 class="title">Adults</h1></label>
+      <input type="number" id="adult" name="total_adults" placeholder="1" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="child"><h1 class="title">Children</h1></label>
+      <input type="number" id="child" name="total_children" placeholder="1" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkin-date"><h1 class="title">Date</h1></label>
+      <input type="date" id="checkin-date" name="checkin" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date"><h1 class="title">Time</h1></label>
+      <input type="time" id="checkout-date" name="checkout" required>
+    </div>
+  
+    
+    <hr>
+  </div>
+  <div class="group2">
+    <div class="elem-group">
+      <label for="message"><h1 class="title">Special Request</h1></label>
+      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+    </div>
+    <button type="submit"><span class="text">Book Table</span><span>Thanks!</span></button>
+    <br>
+    <img src="gr royal.png" alt="" class="logo">
+  </div>
+    
+  </form>
+</body>
+</html>
+<!-- Made by Chintan Hirpara -->

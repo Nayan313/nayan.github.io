@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;1,100&family=Kumar+One+Outline&family=Lobster&family=Russo+One&family=Teko:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+.dark-mode {
+    background-color: black;}
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    width: 100%;
+    text-transform: capitalize;
+   
+    
+  
+}
+.logo{
+    width: 6%;
+}
+
+.search{
+    display: flex;
+    color: blueviolet;
+    padding: 10px 0px;
+}
+.search h1{
+    letter-spacing: 3px;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: blueviolet;
+}
+.search ::placeholder{
+    color: cornflowerblue;
+
+}
+.search i{
+    
+}
+.ad{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    
+}
+
+.ad .ad-img{
+    width: 100%;
+    margin-top: 75px;
+}
+.search input{
+    width: 600px;
+    color: blue;
+    height: 50px;
+    border: 2px solid #f2f2f2;
+    background-color: transparent;
+    border-bottom: 3px solid cornflowerblue;
+    padding: 5px 20px;
+    font-size: 25px;
+}
+
+
+.product-list{
+    text-transform: capitalize;
+    padding-top: 100px;
+    
+}
+.imgframe{
+    width: 50%;
+    border: 2px solid black;
+}
+.product-list img{
+    width: 25%;
+    border: 5px solid aliceblue;
+}
+.productidentity{
+    display: none;
+}
+.product-list a{
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.product{
+    display: flex;
+}
+.product h3{
+    display: none;
+}
+.detail{
+    padding: 15px 30px;
+    width: 95%;
+    background-color: aliceblue;
+    
+}
+.detail .product-name{
+    color: cornflowerblue;
+    font-size: 35px;
+    padding: 20px;
+}
+.detail .price{
+    color: black;
+    font-size: 28px;
+    padding: 20px;
+}
+.detail .price span{
+    color: #242424;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.detail .stock{
+    padding: 20px;
+}
+
+.color-dot{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+.color-dot i{
+    padding: 4px;
+}
+.color-dot1{color: #242424;}
+.color-dot2{color: blue;}
+.color-dot3{color: green;}
+
+
+.footer{
+    background-color: lightblue;
+}
+.footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    font-family: 'Josefin Sans', sans-serif;
+    color: darkslategrey;
+    font-size: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+
+
+
+
+@media(max-width: 768px){
+    .product-list img{
+        width: 40%;
+    }
+    .detail{
+        font-size: 10px;
+    }
+    .search input{
+        width: 50%;
+        margin-left: 35%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .detail .product-name{
+        font-size: 15px;
+        padding: 8px;
+    }
+    .detail .price{
+        color: black;
+        font-size: 10px;
+        padding: 8px;
+    }
+    .detail .price span{
+        color: #242424;
+        font-size: 5px;
+        text-decoration: line-through;
+    }
+    .detail .stock{
+        padding: 8px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}

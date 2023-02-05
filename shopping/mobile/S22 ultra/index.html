@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s22ultra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+
+
+        <h1>shopping</h1>
+        
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                    <a href="#">about us</a>
+                    <a href="#">contact us</a>
+                    <a href="#">info</a>
+                </li>
+            </ul>
+        </div>   
+    </header>
+    <section class="container">
+    <div class="containerimg">            
+        <img id="imagebox" src="s22ultra.jpeg" class="container-img">
+        <div class="product-small-img">
+            <img src="s22img2.webp" class="product-small-images" onclick="myFunction(this)">
+            <img src="s22img1.jpg" class="product-small-images" onclick="myFunction(this)">
+            <img src="s22img4.jpg" class="product-small-images" onclick="myFunction(this)">
+            <img src="s22img5.jpg" class="product-small-images" onclick="myFunction(this)">
+        </div>
+        <div class="product-color-img">
+            <img src="blacks22ultra.jpg" class="product-color-images" onclick="myFunction(this)">
+            <img src="greens22ultra.jpg" class="product-color-images" onclick="myFunction(this)">
+            <img src="whites22ultra.jpg" class="product-color-images" onclick="myFunction(this)">
+            <img src="reds22ultra.jpg" class="product-color-images" onclick="myFunction(this)">
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction(smallimg)
+        {
+            var fullimg = document.getElementById("imagebox");
+            fullimg.src =smallimg.src;
+        }
+    </script>
+    
+    <div class="containet">
+            <h1 class="container-header">Samsung Galaxy S22 Ultra 5G </h1>
+            <P class="price">Price:	<span>₹1,61,998.00</span></P>
+            
+        
+        <div class="btn">
+            <P>12GB 256GB</P>
+            <P>12GB 512GB</P>
+        </div>
+        <br>
+        <br>
+        <a href="registration.html" class="buy">Buy now</a>
+        <div class="info1">
+            <div class="infoin1">
+                <P>Brand</P>
+                <P>Model Name	</P>
+                <P> Network Service Provider</P>
+                <P>OS	</P>
+                <P>Cellular Technology</P>
+            </div>
+            <div class="infoin2">
+                <P>Samsung</P>
+                <P>Samsung Galaxy S22 Ultra 5G</P>
+                <P>Unlocked for All Carriers</P>
+                <P>	Android 12</P>
+                <P>4G 5G</P>
+            </div>
+        </div>
+        <div class="aboutinfoproduct">
+            <h1>About this item</h1>
+            <P>The first Galaxy S with embedded S Pen. Write comfortably like pen on paper, turn quick notes into legible text and use Air Actions to control your phone remotely. Improved latency in Samsung Notes makes every pen stroke feel as natural as ink on paper — and you can convert those hastily written ideas into legible text.<br>
+            <br>5G Ready powered by Galaxy’s first 4nm processor. Our fastest, most powerful chip ever. That means, a faster CPU and GPU compared to Galaxy S21 Ultra. It’s an epic leap for smartphone technology.<br>
+            <br>The Dynamic AMOLED 2x display improves outdoor visibility with up to 1750 nits in peak brightness.* And the 120Hz adaptive refresh rate keeps the scroll smooth, adjusting to what's on screen for an optimized view.<br>
+            <br>Our most advanced Pro-grade Camera yet, packing the power of a professional's kit in one handheld device. Also lets you make your nights epic with Nightography: The sensor pulls in more light, the Super Clear Lens tones down lens flare, and fast-acting AI delivers near-instant intelligent processing.<br>
+            <br>Connector type: usb type c</P>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

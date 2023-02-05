@@ -1,0 +1,164 @@
+:root {
+    --main-color: #818eb1;
+    --hover-color: #2764BA;
+    --body-color: #E0E0E0;
+    --box-color: white;
+    --border-color: #554e8e;
+  }
+
+  .headerclass{
+    position: fixed;
+	background: #fff;
+    justify-content: space-around;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    text-transform: uppercase;
+	border-bottom: var(--border-color) solid 5px;
+}
+.logo img{
+    width: 45px;
+}
+.headerclass .navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.headerclass .navbar ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.headerclass .navbar ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.checkbtn{
+    font-size: 35px;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+.l-heading{
+    font-size: 40px;
+}
+.bg-dark{
+    background: #333;
+    color: #f4f4f4;
+}
+/* .headerclass{
+    justify-content: space-between;
+    display: flex;
+    height: 60px;
+    border-bottom: orange 5px solid;
+    text-transform: uppercase;
+}
+.logo img{
+    width: 55px;
+}
+.navbar{
+    display: flex;
+    padding: 20px;
+}
+.navbar a{
+    padding: 0px 20px;
+    text-decoration: none;
+} */
+/* about info */
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+#about-info .info-right img{
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 70%;
+    border-radius: 10%;
+}
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+.text-primary{
+    color: orange;
+}
+
+.clr{
+    clear: both;
+}
+/* testimonolis */
+
+#testimonolis{
+    height: 600px;
+    background: url('../Hotel/img/about.jpeg.jpg') no-repeat center center/cover;
+    padding-top: 80px;
+}
+
+#testimonolis h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#testimonolis .testimonolis{
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+#testimonolis .testimonolis img{
+    width: 48px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* footer */
+#main-footer{
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
+@media (max-width:850px){
+    .checkbtn{
+        display: block;
+        color: var(--main-color);
+    }
+    .headerclass ul{
+        position: fixed;
+        width: 100%;
+        height: 48vh;
+        background-color: var(--main-color);
+        top: 35px;
+        padding: 20px 20px 0px 20px;
+        left: -120%;
+        transition: all 1.5s;
+        text-align: center;
+        display: grid;
+    }
+    .headerclass ul li{
+        display: block;
+    }
+    .headerclass ul li a{
+        font-size: 20px;
+        transition: all .5s;
+    }
+    .headerclass a:hover,a.active{
+        background: none;
+        color: yellow;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+    
+}

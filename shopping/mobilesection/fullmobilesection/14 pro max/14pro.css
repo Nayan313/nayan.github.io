@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Secular+One&family=Vazirmatn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&family=Secular+One&family=Vazirmatn&display=swap');
+:root {
+    --main-color: #818eb1;
+    --hover-color: #2764BA;
+    --body-color: #E0E0E0;
+    --box-color: white;
+    --border-color: #554e8e;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+
+.headerclass{
+    position: fixed;
+	background: #fff;
+    justify-content: space-around;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    text-transform: uppercase;
+	border-bottom: var(--border-color) solid 5px;
+}
+.logo img{
+    width: 45px;
+}
+.headerclass .navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.headerclass .navbar ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.headerclass .navbar ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.checkbtn{
+    font-size: 35px;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}.container{
+    display: flex;
+    text-transform: capitalize;
+}
+.container-img{
+    width: 40%;
+    margin-left: 10%;
+}
+.container .container-header{
+    color: cornflowerblue;
+    font-size: 25px;
+
+}
+.container a{
+    padding: 10px 50px;
+}
+.buy{
+    background-color:  cornflowerblue;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+}
+.containet{
+    margin-left: -50%;
+}
+.container .containet .price{
+    color: blue;
+}
+.container .containet .price span{
+    color: red;
+}
+.container .containet .containet-info{
+    color: blue;
+}
+.container .btn p{
+    border: 2px solid cornflowerblue;
+    width: 15%;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+}
+.container .btn p:hover{
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+.container .info1{
+    display: flex;
+    border-bottom: 1px solid cornflowerblue;
+}
+.container .info1 .infoin1{
+ color: blue;
+ font-family: 'Roboto Condensed', sans-serif;
+ 
+}
+.buy:hover{
+    background-color: cadetblue;
+
+}
+.container .info1 .infoin2{
+    color: cornflowerblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 20px;
+    
+}
+.container .aboutinfoproduct{
+    width: 600px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+
+.product-small-img{
+    background-color: #f2f2f2;
+    display: flex;
+    width: 50%;
+    margin: 10px 0;
+    
+}
+.product-small-images{
+    width: 25%;
+    height: 100%;
+}
+.product-color-img{
+    display: grid;
+    width: 25%;
+    margin-top: -50%;
+
+}
+.product-color-images{
+    width: 25%;
+}
+.logo{
+    width: 6%;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:450px){
+
+    
+    .logo{
+        width: 25%;
+    }
+    .header{
+        width: 50%;
+    }
+    .containerimg{
+        width: 100%;
+    }
+    .container .containet .price{
+        font-size: 20px;
+    }
+    .containet{
+        margin-left: 50%;
+    }
+    .container{
+        display: block;
+    }
+    .containet {
+        margin-top: 28%;
+        margin-left: 0;
+    }
+    .container .container-header{
+        font-size: 20px;
+        padding: 13px;
+        margin-top: 9pc;
+    }
+    .containet .btn{
+        display: flex;
+        width: 500px;
+        
+        
+    }
+    .containet .btn p{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .info1{
+        font-size: 17px;
+    }
+    .container .aboutinfoproduct{
+        width: 370px;
+    }
+    .aboutinfoproduct{
+        font-size: 13px;
+    }
+    .container-img{
+        width: 100%;
+        margin-left: 14%;
+    }
+    .product-small-img{
+        width: 100%;
+    }
+    .product-color-img{
+        width: 50%;
+        margin-top: -320px;
+    }
+    .headerclass{
+        justify-content: space-between;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+.checkbtn{
+        display: block;
+        color: black;
+    }
+    .headerclass ul{
+        position: fixed;
+        width: 100%;
+        height: 48vh;
+        background-color: var(--main-color);
+        top: 54px;
+        padding: 20px 20px 0px 20px;
+        left: -120%;
+        transition: all 1.5s;
+        text-align: center;
+        display: grid;
+        z-index: -5;
+    }
+    .headerclass ul li{
+        display: block;
+    }
+    .headerclass ul li a{
+        font-size: 20px;
+        transition: all .5s;
+    }
+    .headerclass a:hover,a.active{
+        background: none;
+        color: yellow;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    
+
+    
+}

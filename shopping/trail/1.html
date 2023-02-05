@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topwear')">
+          Topwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Bottomwear')">
+          Bottomwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Jacket')">
+          Jacket
+        </button>
+        <button class="button-value" onclick="filterProduct('Watch')">
+          Watch
+        </button>
+      </div>
+      <div id="products">
+    <div class="card Topwear">
+            <div class="image-container">
+                <img src="img/14 pro.jpeg"></div>
+                <div class="container">
+                    <h5 class="product-name">REGULAR WHITE T-SHIRT</h5><h6>$30</h6>
+                </div></div>
+    <div class="card Bottomwear">
+                    <div class="image-container">
+                        <img src="img/14.jpeg"></div>
+    <div class="container">
+        <h5 class="product-name">BEIGE SHORT SKIRT</h5>
+        <h6>$49</h6>
+    </div></div>
+    <div class="card Watch">
+        <div class="image-container">
+                            <img src="img/s22.jpeg"></div>
+                            <div class="container">
+                                <h5 class="product-name">s22</h5>
+                                <h6>$99</h6>
+                            </div></div>
+    <div class="card Topwear">
+        <div class="image-container">
+                                <img src="img/s22ultra.jpeg"></div>
+                                <div class="container">
+                                    <h5 class="product-name">BASIC KNITTED TOP</h5>
+                                    <h6>$29</h6>
+                                </div></div>
+                                <div class="card Jacket">
+                                    <div class="image-container">
+                                    <img src="img/adtv.webp"></div>
+                                    <div class="container">
+                                        <h5 class="product-name">BLACK LEATHER JACKET</h5>
+                                        <h6>$129</h6>
+                                    </div></div>
+    <div class="card Bottomwear">
+        <div class="image-container">
+            <img src="img/adac.jpeg"></div>
+             <div class="container">
+                <h5 class="product-name">STYLISH PINK TROUSERS</h5>
+                <h6>$89</h6>
+            </div></div>
+<div class="card Jacket">
+    <div class="image-container">
+        <img src="img/adhead.jpg"></div>
+        <div class="container">
+            <h5 class="product-name">BROWN MEN'S JACKET</h5>
+            <h6>$189</h6>
+        </div>
+    </div>
+    <div class="card Bottomwear">
+        <div class="image-container">
+            <img src="img/adlap.jpg">
+        </div>
+        <div class="container">
+            <h5 class="product-name">COMFY GRAY PANTS</h5>
+            <h6>$49</h6>
+        </div>
+    </div>
+</div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    background-color: #e3edf7;
+}
+.try{
+    text-transform: uppercase;
+    padding: 40px;
+    margin: 50px;
+    background: #e3edf7;
+    border-radius: 8px;
+    box-shadow:  -8px -8px 10px rgb(255,255,255,0.9) 8px 8px 10px rgb(0, 0, 0,0.5);
+    
+
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Lexend:wght@300&family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&family=Secular+One&family=Vazirmatn&display=swap');
+body{
+    background-color: white;
+}
+:root {
+    --main-color: #818eb1;
+    --hover-color: #2764BA;
+    --body-color: #E0E0E0;
+    --box-color: white;
+    --border-color: #554e8e;
+  }
+
+  .headerclass{
+    position: fixed;
+	background: #fff;
+    justify-content: space-around;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    text-transform: uppercase;
+	border-bottom: var(--border-color) solid 5px;
+}
+.logo img{
+    width: 45px;
+}
+.headerclass .navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.headerclass .navbar ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.headerclass .navbar ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.checkbtn{
+    font-size: 35px;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+.home{
+    background-image: url('img/rooms/rooms-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width:50%;
+}
+.home2{
+    background-image: url('img/rooms/room\ 2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width:50%;
+}
+.home3{
+    background-image: url('img/rooms/room\ 3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width:50%;
+}
+.home4{
+    background-image: url('img/rooms/room\ 4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width:50%;
+}
+.home5{
+    background-image: url('img/rooms/room\ 5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width:50%;
+}
+.home .home-containt{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-family: 'Lexend', sans-serif;
+}
+.home h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: orange;   
+}
+.home a{
+    color: orange;
+    padding: 0px 10px 5px 0px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.home a:after {
+    content: '';
+    position: absolute;
+    width: 130px;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .home a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  @media (max-width:850px){
+    .checkbtn{
+        display: block;
+        color: var(--main-color);
+    }
+    .headerclass ul{
+        position: fixed;
+        width: 100%;
+        height: 48vh;
+        background-color: var(--main-color);
+        top: 35px;
+        padding: 20px 20px 0px 20px;
+        left: -120%;
+        transition: all 1.5s;
+        text-align: center;
+        display: grid;
+    }
+    .headerclass ul li{
+        display: block;
+    }
+    .headerclass ul li a{
+        font-size: 20px;
+        transition: all .5s;
+    }
+    .headerclass a:hover,a.active{
+        background: none;
+        color: yellow;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}

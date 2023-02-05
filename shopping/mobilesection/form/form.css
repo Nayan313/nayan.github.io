@@ -1,0 +1,21 @@
+body{
+    background-color: white;
+}
+form{
+    margin: 50px 500px auto;
+    border: 8px solid cornflowerblue;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+input{
+    width: 100%;
+    background-color: brown;
+}
+.registration{
+    width: 90%;
+    padding: 10px;
+}
+.registration-gender input{
+width: 20px;
+padding: 20px;
+}

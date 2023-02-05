@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Secular+One&family=Vazirmatn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&family=Secular+One&family=Vazirmatn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Lexend:wght@300&family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&family=Secular+One&family=Vazirmatn&display=swap');
+body{
+    background-color: white;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    border-bottom:2px solid cornflowerblue;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar li{
+    list-style-type: none;
+}
+.navbar a{
+    margin: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+.container{
+    display: flex;
+    text-transform: capitalize;
+}
+.container-img{
+    width: 40%;
+    margin-left: 10%;
+}
+.container .container-header{
+    color: cornflowerblue;
+    font-size: 25px;
+    
+font-family: 'Lexend', sans-serif;
+
+}
+.container a{
+    padding: 10px 50px;
+}
+.buy{
+    background-color:  cornflowerblue;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+}
+.containet{
+    margin-left: -50%;
+}
+.container .containet .price{
+    color: blue;
+}
+.container .containet .price span{
+    color: red;
+}
+.container .containet .containet-info{
+    color: blue;
+}
+.container .btn p{
+    border: 2px solid cornflowerblue;
+    width: 15%;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+}
+.container .btn p:hover{
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+.container .info1{
+    display: flex;
+    border-bottom: 1px solid cornflowerblue;
+}
+.container .info1 .infoin1{
+ color: blue;
+ font-family: 'Roboto Condensed', sans-serif;
+ 
+}
+.buy:hover{
+    background-color: cadetblue;
+
+}
+.container .info1 .infoin2{
+    color: cornflowerblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 20px;
+    
+}
+.container .aboutinfoproduct{
+    width: 600px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+
+.product-small-img{
+    background-color: #f2f2f2;
+    display: flex;
+    width: 50%;
+    margin: 10px 0;
+    
+}
+.product-small-images{
+    width: 25%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:450px){
+
+    .navbar{
+        display: none;
+    }
+    .header{
+        width: 50%;
+    }
+    .containerimg{
+        width: 100%;
+    }
+    .container .containet .price{
+        font-size: 20px;
+    }
+    .containet{
+        margin-left: 50%;
+    }
+    .container{
+        display: block;
+    }
+    .containet {
+        margin-top: 28%;
+        margin-left: 0;
+    }
+    .container .container-header{
+        font-size: 20px;
+        padding: 13px;
+        margin-top: 9pc;
+    }
+    .containet .btn{
+        display: flex;
+        width: 500px;
+        
+        
+    }
+    .containet .btn p{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .info1{
+        font-size: 17px;
+    }
+    .container .aboutinfoproduct{
+        width: 370px;
+    }
+    .aboutinfoproduct{
+        font-size: 13px;
+    }
+    .container-img{
+        width: 100%;
+        margin-left: 14%;
+    }
+    .product-small-img{
+        width: 100%;
+    }
+   
+
+    
+}
