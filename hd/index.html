@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="website icon" type="png" href="img/logo.png">
+</head>
+<body>
+    <header class="headerclass">
+        <div class="nav-logo">
+            <div class="logo1">
+                <img src="img/logo.png" class="logo">
+            </div>
+            <div class="navbar">
+                
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+                <ul>
+                    <li><a href="#home" class="">home</a></li>
+                    <li><a href="#" class="">about</a></li>
+                    <li><a href="#" class="">movie</a>
+                        <div class="drop">
+                            <ul >
+                                <li><a href="#new">English</a></li>
+                                <li><a href="#">Gujarati</a></li>
+                                <li><a href="#">Hindi</a></li>
+                                <li><a href="#">korean</a></li>
+                                <li><a href="#">japanes</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="seeroom.html" id="java" class="">gense</a></li>
+                    <li><a href="contact.html" class="">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="search-dark-mode">
+            <div class="serch" id="search" onkeyup="search()">
+                <input type="search" placeholder="Search" id="innersearch" >
+            </div>
+        <a href="login.html" class="button" id="sigh">Sigh In</a>
+        </div>
+        
+    </header>
+    <br>
+    <section class="slideshow">
+        <div class="slide">
+            
+            <div class="image-details">
+               <h1 class="title">Doctor Strange in the Multiverse of Madness</h1>
+            <div class="details">   
+            <h1 class="imdb-rating"><i class="fa-brands fa-imdb" id="imdb"></i>  9.8</h1>
+            <h1 class="langaues"><i class="fa-solid fa-language" id="lan"></i>  Hindi,English</h1>
+            <h1 class="duration"><i class="fa-solid fa-clock" id="duration"></i>  2:22:00</h1>
+            <h1 class="caption"><i class="fa-solid fa-closed-captioning" id="caption"></i>  English</h1>
+            </div>
+            <br>
+            <a href="index1.html" class="btn">watch now</a>
+            </div>
+            <img src="img/1.jpg"  class="slide-bild">
+        </div>
+        <div class="slide">
+            <div class="image-details">
+              <h1 class="title">Avatar: <br>  The Way of Water</h1>
+              <div class="details">   
+              <h1 class="imdb-rating"><i class="fa-brands fa-imdb" id="imdb"></i>  9.8</h1>
+              <h1 class="langaues"><i class="fa-solid fa-language" id="lan"></i>  Hindi,English</h1>
+              <h1 class="duration"><i class="fa-solid fa-clock" id="duration"></i>  2:22:00</h1>
+              <h1 class="caption"><i class="fa-solid fa-closed-captioning" id="caption"></i>  English</h1>
+              </div>
+              <br>
+              <a href="index1.html" class="btn">watch now</a>
+          </div>
+          <img src="img/avatar2.jpg" alt=""class="slide-bild">
+        </div>
+        <div class="slide">
+            <div class="image-details">
+                <h1 class="title">Brahmāstra: Part One – Shiva</h1>
+                <div class="details">   
+                <h1 class="imdb-rating"><i class="fa-brands fa-imdb" id="imdb"></i>  9.8</h1>
+                <h1 class="langaues"><i class="fa-solid fa-language" id="lan"></i>  Hindi,English</h1>
+                <h1 class="duration"><i class="fa-solid fa-clock" id="duration"></i>  2:22:00</h1>
+                <h1 class="caption"><i class="fa-solid fa-closed-captioning" id="caption"></i>  English</h1>
+                </div>
+                <br>
+                <a href="index1.html" class="btn">watch now</a>
+            </div>
+            <img src="img/bhrmastra.jpg"  alt=""class="slide-bild"> 
+        </div>
+        <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a>
+        <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+        <ol class="indikatorenliste">
+            <li class="indikator" onclick="springeZuEintrag(0)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(1)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
+        </ol>
+    </section>
+
+
+    <section class="new" id="newjs">
+        <div class="main-title"> Latest & trending</div>
+        <div class="cards">
+            <a href="index1.html" class="card">
+                <img src="img/1.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Doctor Strange in the Multiverse of Madness</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/sira raman.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Sita Ramam</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/Taaza-Khabar.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Taaza-Khabar</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/wednesday.jpeg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">wednesday</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a><a href="index1.html" class="card">
+                <img src="img/de de pyar de.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">De DE Pyaar De</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/bhuj.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Bhuj: The Pride of India</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/black panter.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Black panther</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/cilvilwar.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Civil War</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/vikram.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Vikram</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="part-two">
+        <div class="main-title">movie</div>
+        <div class="cards">
+            <a href="index1.html" class="card">
+                <img src="img/1.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Doctor Strange in the Multiverse of Madness</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/total dhamal.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Total Dhammal</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/thor love and thunder.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Thor Love & Thunder</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/the avengers.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">The Avengers</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/thanhaji.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Tanhaji</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/sira raman.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Sita Ramam</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/tadap.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Tadap</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/shang-chi.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Shang Chi</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/misson mangal.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Mission Mangal</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/iron man 3.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Iron Man 3</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/housefull 4.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Housefull 4</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/infinity war.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Infinity War</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/intelligent.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Intelligent</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/govinda naam mera.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Govinda Naam Mera</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="img/avtar.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">avatar </h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <section class="new">
+        <div class="main-title">web show</div>
+        <div class="cards">
+            <a href="index1.html" class="card">
+                <img src="web-series/Taaza-Khabar.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Taaza-Khabar</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/wednesday.jpeg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">wednesday</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/Money-Heist-Characters-Wallpaper-2.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">money heist</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/squid game.webp" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">squid game</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/mirzapur.webp" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">mirzapur</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/the-family-man.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">The Family Man</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/Aashram-.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">asshram</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/abhay3.webp" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">abhay3</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <section class="new">
+        <div class="main-title">web show</div>
+        <div class="cards">
+            <a href="index1.html" class="card">
+                <img src="web-series/Taaza-Khabar.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">Taaza-Khabar</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/wednesday.jpeg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">wednesday</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/Money-Heist-Characters-Wallpaper-2.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">money heist</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/squid game.webp" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">squid game</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/mirzapur.webp" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">mirzapur</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/the-family-man.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">The Family Man</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/Aashram-.jpg" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">asshram</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="index1.html" class="card">
+                <img src="web-series/abhay3.webp" alt="" class="poster">
+                <div class="rest-card">
+                    <div class="cont">
+                        <h4 class="con-title">abhay3</h4>
+                        <div class="sub">
+                            <p class="description">action,thriller,2022</p>
+                            <p class="imdb"><span>IMDB</span>9.8</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Something</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+             Somewhere In. The World <br>
+                
+            <a class="footer__btn" href="#">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Premium Plan</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Mobile</a>
+              </li>
+      
+              <li>
+                <a href="#">Vip</a>
+              </li>
+                  
+              <li>
+                <a href="#">Premium</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+                <li><a href="#new">English</a></li>
+                <li><a href="#">Gujarati</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">korean</a></li>
+                <li><a href="#">japanes</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2023 Something. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Made with <span class="heart">♥</span>Nayan Sukhadiya </span>
+          </div>
+        </div>
+      </footer>
+    <script src="slide.js"></script>
+</body>
+</html>
